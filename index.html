@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h2>challenge 1</h2>
+     <p> the scripte will tel us how many word are in the following message ="there is no war in Ba Sing Se" </p>
+     <p> the awnser in the console</p>
+    <script>
+        let message="there is no war in Ba Sing se";
+        let word = message.split(' ');
+        let wordCount = word.length;
+        console.log(wordCount);
+    </script>
+     <h2>challenge 2</h2>
+     <p> let countries=['China','Japan','South Korea','Vitnam','Malysia']
+        let capitals=['Beijing','Tokyo','Seoul','Hanoi','koala Lumper']</p>
+        <p> the script will output to the console a message in this form :
+            Your country : COUNTRY has the capital named : CAPITAL.
+            COUNTRY and CAPITAL will be pulled from the two arrays respectively. 
+        </p>
+    <script>
+        let countries=['China','Japan','South Korea','Vitnam','Malysia']
+        let capitals=['Beijing','Tokyo','Seoul','Hanoi','koala Lumper']
+        for (let i=0;i<countries.length;i++){
+            console.log(`Your country : ${countries[i]} has the capital named : ${capitals[i]}.`);
+        }   
+    </script>
+    <h2>challenge 3</h2>
+    <p>Write a variable, randomizer, that receives a random number between 0 and 3.
+        for your three fates, here they are 👏
+        If randomizer is equal to 0, your fate is “A certain victory”
+        if randomizer is equal to 1, your fate is “not so certain victory”
+        if randomizer is equal to 2, your fate is “an uneasy victory
+        for all other cases, the titan will give the same answer “Your fate is unclear, ô chosen undead”
+    </p>
+    <script>
+         let randomizer = Math.floor(Math.random() *4)
+
+         if(randomizer === 0) {
+           console.log("Your fate is a certain victory");
+         }
+         else if (randomizer === 1) {
+          console.log("Your fate is not so certain victory");
+         } 
+          else if (randomizer === 2) {
+           console.log("Your fate is an uneasy victory");
+          } 
+           else {
+           console.log("Your fate is unclear, ô chosen undead");
+          }
+    </script>
+    <h2>challenge 4</h2>
+    <p>Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
+    </p>
+    <script>
+        function checkSeason(month){
+          switch (month){
+                case 12:
+                case 1:
+                case 2:
+                    console.log("winter")
+                break;
+                case 3:
+                case 4:
+                case 5:
+                    console.log("spring")
+                break;
+                case 6:
+                case 7:
+                case 8:
+                    console.log("summer")
+                break;
+                case 9:
+                case 10:
+                case 11:
+                    console.log("autunm")
+                break;
+                default:
+                    console.log("season dont existe")
+                break;
+            }
+        }
+        checkSeason(12);
+        checkSeason(6);
+        checkSeason(10);
+        checkSeason(5);
+    </script>
+</body>
+</html>
